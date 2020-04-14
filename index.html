@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <script type="module" src="./contacts.js"></script>
+</head>
+<html>
+    <body>
+        <my-contacts id="mycontacts" title="My table"></my-contacts>
+
+        <script>
+         var mycontacts = document.getElementById("mycontacts");
+         mycontacts.addEventListener(
+           "contactrowclicked",
+           function(e) { e.preventDefault(); console.log(e.detail) },
+           false
+         );
+
+        </script>
+    </body>
+</html>
